@@ -199,7 +199,6 @@ body{
 
 .intr:hover {
     transform: scale(1.02);
-    background-color: rgb(190, 239, 252);
 }
 
 .infA p:hover, .infB p:hover {
