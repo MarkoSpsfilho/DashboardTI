@@ -1,3 +1,5 @@
+/* ==== CONFIGURAÇÕES DA PÁGINA INICIAL ====*/
+
 /* ==== CONFIGURAÇÕES GERAIS ====*/
 
 * {
@@ -18,16 +20,40 @@ body{
     align-items: center;
     background-color: rgb(6, 107, 97);
     justify-content: space-between;
+    height: 90px;
 }
+
 .logo{
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 2%;
     font-size: 120%;
     background-color: rgb(101, 169, 179);
     margin: 1%;
     border-radius: 20px;
+    height: 70px;
+    transition: all 0.3s ease;
 }
-.but{
+
+.seta{
+    width: 110px;
+    height: 90px;
+    transition: 0.8s ease-in-out;
+}
+
+.container-seta {
+    width: 110px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ===== CONFIGURANDO BOTÕES HEADER =====*/
+
+.btn{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,12 +66,12 @@ body{
 
 }
 
-.but a{
+.btn a{
     background-color: rgb(190, 239, 252);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70px;
+    padding: 10px;
     height: 50px;
     margin: 10px;
     border-radius: 10px;
@@ -55,12 +81,12 @@ body{
     font-size: large;
     text-decoration: none;
 }
-.but a:active {
+.btn a:active {
     transform: translate(2px, 2px); /* Move o botão na direção da sombra */
     box-shadow: inset 2px 0px rgba(0, 0, 0, 0.2);
 }
 
-.but a.active{
+.btn a.active{
     box-shadow: inset 4px 4px 5px rgba(0, 0, 0, 0.2);
     transform: translate(2px, 3px);
     cursor: default;
@@ -71,7 +97,29 @@ body{
 
 /* ==== ANIMANDO BOTÕES ====*/
 
-.but a:hover {
+.logo:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 5px rgb(190, 239, 252),
+                0 0 10px rgb(190, 239, 252),
+                0 0 20px rgb(190, 239, 252),
+                0 0 30px rgb(190, 239, 252);
+}
+
+.container-seta:hover {
+    animation: apontarParaHome 1.2s ease-out forwards;
+    animation-delay: 300ms;
+}
+
+@keyframes apontarParaHome {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(130px);
+    }
+}
+
+.btn a:hover {
     transform: scale(1.08);
     box-shadow: 0 0 5px rgb(190, 239, 252),
                 0 0 10px rgb(190, 239, 252),
@@ -80,63 +128,29 @@ body{
 
 }
 
-.seta{
-    width: 150px;
-}
-.home{
-    background-color: black;
-    border-style: solid;
-}
-.grafb{
+/* ==== CONFIGURANDO GRÁFICOS ====*/
+
+.grafA{
     display: flex;
     justify-content: flex-start;
     width: 50%;
     margin: 1%;
     border-radius: 5px;
     box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+
 }
-.grafp{
+
+.grafB{
     display: flex;
     width: 50%;
     border-radius: 5px;
     box-shadow: -10px 10px 9px rgba(0, 0, 0, 0.3);
     margin: 1%;
+
 }
-.infA{
-    display: flex;
-    padding-top: 1%;
-}
-.infA p, .infB p{
-    padding: 3%;
-    font-size: 35px;
-    border-style: solid;
-    border-radius: 10px;
-    margin: 1%;
-    border-color: rgb(101, 169, 179);
-}
-.infB{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 1%;
-}
-.rodp{
-    display: flex;
-    background-color: rgb(6, 107, 97);
-    align-items: center;
-    gap: 25%;
-}
-.nomeg{
-    padding-left: 2%;
-}
-.dest{
-    color: rgb(6, 107, 97);
-}
-.integ{
-    border-radius: 5px;
-    border-style: solid;
-    padding: 20px;
-    margin: 1%;
-}
+
+/* ==== BLOCOS DE INFORMAÇÃO E INTRO ====*/
+
 .intr{
     padding: 3%;
     font-size: 35px;
@@ -145,6 +159,55 @@ body{
     margin: 1%;
     border-color: rgb(101, 169, 179);
     text-align: center;
+    transition: all 0.3s ease;
+}
+
+.infA{
+    display: flex;
+    padding-top: 1%;
+    transition: all ease 0.3s;
+}
+
+.infB{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+    transition: all ease 0.3s;
+}
+
+.infA p, .infB p{
+    padding: 3%;
+    font-size: 35px;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 1%;
+    border-color: rgb(101, 169, 179);
+    transition: all 0.3s ease;
+}
+
+
+.infA img, .infB img {
+    width: 150%;
+    transition: all 0.3s ease;
+}
+
+.dest{
+    color: rgb(6, 107, 97);
+}
+
+/* ==== ANIMANDO BLOCOS DE INFORMAÇÃO E INTRO ====*/
+
+.intr:hover {
+    transform: scale(1.02);
+    background-color: rgb(190, 239, 252);
+}
+
+.infA p:hover, .infB p:hover {
+    transform: scale(1.02);
+}
+
+.infA img:hover, .infB img:hover {
+    transform: scale(1.02);
 }
 
 /* ==== CARDS DO MAIN SOBRE DAS ÁREAS ====*/
@@ -186,4 +249,172 @@ body{
 .card:hover {
     transform: scale(1.08);
     box-shadow: none;
+}
+
+/* ==== CONFIGURANDO FOOTER ====*/
+.rodp{
+    display: flex;
+    background-color: rgb(6, 107, 97);
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 50px 20px;
+}   
+
+.integ{
+    width: 300%;
+    margin: 0;
+    text-align: center;
+}
+
+.integ h2 {
+    margin: 10px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid black;
+}
+
+.integ ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 10px;
+}
+
+.integ ul li {
+    display: flex;
+    border: 3px solid black;
+    border-radius: 18px;
+    background-color: rgb(101, 169, 179);
+    padding: 10px;
+    width: 150px;
+    transition: all 0.3s ease;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+.ano {
+    margin: 0;
+    margin-right: 20px;
+}
+
+.nomeg{
+    margin-left: 20px;
+    padding: 10px;
+    width: 40%;
+}
+
+/* ==== ANIMANDO NOMES DOS INTEGRANTES DOS GRUPOS*/
+.integ li:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 5px rgb(190, 239, 252),
+                0 0 10px rgb(190, 239, 252),
+                0 0 20px rgb(190, 239, 252),
+                0 0 30px rgb(190, 239, 252);
+}
+
+/* ==== CONFIGURAÇÃO DA PÁGINA DE FRONT END ==== */
+
+/* ==== CONFIGURAÇÕES GERAIS ====*/
+
+.main-container-front {
+    padding: 10px;
+}
+
+/* ==== CONFIGURAÇÕES DE TEXTO ====*/
+
+.container-texto-front {
+    padding: 10px;
+}
+
+.container-titulo-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    padding: 25px 40px;
+    border: 2px solid black;
+    background-color: rgb(190, 239, 252);
+    border-radius: 10px;
+}
+
+.container-titulo-front h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+/* ==== CONFIGURANDO BLOCOS DE TEXTO ==== */
+
+.container-p-img-front {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.info_A_C_front {
+    display: flex;
+    padding-top: 1%;
+    transition: all ease 0.3s;
+}
+
+.info_B_D_front {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+    transition: all ease 0.3s;
+}
+
+.info_A_C_front p, .info_B_D_front p {
+    padding: 3%;
+    font-size: 35px;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 1%;
+    border-color: rgb(101, 169, 179);
+    transition: all 0.3s ease;
+}
+
+/* ==== AJUSTANDO IMAGENS ==== */
+.info_A_C_front img, .info_B_D_front img{
+    width: 380%;
+    transition: all 0.3s ease;
+}
+
+.logos_front {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+}
+
+.bibliotecas_front {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: -10px 10px 9px rgba(0, 0, 0, 0.3);
+    margin: 1%;
+}
+
+.css_flex_grids {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+}
+
+.front_back {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: -10px 10px 9px rgba(0, 0, 0, 0.3);
+    margin: 1%;
+}
+
+/* ==== ANIMANDO BLOCOS DE INFORMAÇÃO E IMAGENS ====*/
+
+.info_A_C_front p:hover, .info_B_D_front p:hover {
+    transform: scale(1.02);
+}
+
+.info_A_C_front img:hover, .info_B_D_front img:hover {
+    transform: scale(1.02);
 }
