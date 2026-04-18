@@ -1,3 +1,5 @@
+/* ==== CONFIGURAÇÕES GERAIS ====*/
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +10,9 @@ body{
     background-size: cover;
     background-position: center;
 }
+
+/* ==== CONFIGURAÇÕES HEADER ====*/
+
 .tit{
     display: flex;
     align-items: center;
@@ -31,8 +36,10 @@ body{
     margin-right: 1%;
     border-radius: 50px;
     height: 5px;
+    transition: all 0.3s ease;
 
 }
+
 .but a{
     background-color: rgb(190, 239, 252);
     display: flex;
@@ -50,14 +57,29 @@ body{
 }
 .but a:active {
     transform: translate(2px, 2px); /* Move o botão na direção da sombra */
-    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 2px 0px rgba(0, 0, 0, 0.2);
 }
+
 .but a.active{
     box-shadow: inset 4px 4px 5px rgba(0, 0, 0, 0.2);
     transform: translate(2px, 3px);
     cursor: default;
-    color: rgb(14, 95, 95);
+    color: rgb(2, 27, 27);
+    border: 3px solid black;
 }
+
+
+/* ==== ANIMANDO BOTÕES ====*/
+
+.but a:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 5px rgb(190, 239, 252),
+                0 0 10px rgb(190, 239, 252),
+                0 0 20px rgb(190, 239, 252),
+                0 0 30px rgb(190, 239, 252);
+
+}
+
 .seta{
     width: 150px;
 }
@@ -124,6 +146,8 @@ body{
     border-color: rgb(101, 169, 179);
     text-align: center;
 }
+
+/* ==== CARDS DO MAIN SOBRE DAS ÁREAS ====*/
 .card{
     background-color: rgb(121, 255, 172);
     display: flex;
@@ -134,7 +158,7 @@ body{
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 7px 7px 3px rgba(0, 0, 0, 0.3);
-    transition: all 0.1s ease;
+    transition: all 0.3s ease;
     font-size: large;
     text-decoration: none;
     margin: 2%;
@@ -155,4 +179,11 @@ body{
 .l2{
     display: flex;
     justify-content: center;
+}
+
+/* ==== ANIMANDO OS CARDS ====*/
+
+.card:hover {
+    transform: scale(1.08);
+    box-shadow: none;
 }
