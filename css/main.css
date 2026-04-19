@@ -153,7 +153,7 @@ body{
 
 .intr{
     padding: 3%;
-    font-size: 35px;
+    font-size: 1.3rem;
     border-style: solid;
     border-radius: 10px;
     margin: 1%;
@@ -177,7 +177,7 @@ body{
 
 .infA p, .infB p{
     padding: 3%;
-    font-size: 35px;
+    font-size: 1.3rem;
     border-style: solid;
     border-radius: 10px;
     margin: 1%;
@@ -343,12 +343,6 @@ body{
 
 /* ==== CONFIGURANDO BLOCOS DE TEXTO ==== */
 
-.container-p-img-front {
-    display: flex;
-    justify-content: flex-start;
-    padding: 0;
-}
-
 .info_A_C_front {
     display: flex;
     padding-top: 1%;
@@ -364,7 +358,7 @@ body{
 
 .info_A_C_front p, .info_B_D_front p {
     padding: 3%;
-    font-size: 35px;
+    font-size: 1.5rem;
     border-style: solid;
     border-radius: 10px;
     margin: 1%;
@@ -415,5 +409,112 @@ body{
 }
 
 .info_A_C_front img:hover, .info_B_D_front img:hover {
+    transform: scale(1.02);
+}
+
+/* ==== CONFIGURAÇÃO DA PÁGINA DE UX ==== */
+
+
+/* ===== CONFIGURAÇÕES GERAIS =====*/
+
+.main-container-ux {
+    padding: 10px; 
+}
+
+/* ==== CONFIGURAÇÕES DE TEXTO ==== */
+
+.container-texto-ux {
+    padding: 10px;
+}
+
+.container-titulo-ux {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    padding: 25px 40px;
+    border: 2px solid black;
+    background-color: rgb(190, 239, 252);
+    border-radius: 10px;
+}
+
+.container-titulo-ux h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+/* ==== CONFIGURANDO BLOCOS DE TEXTO ==== */
+
+.info_A_C_ux {
+    display: flex;
+    padding-top: 1%;
+    transition: all 0.3s ease;
+}
+
+.info_B_D_ux {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+    transition: all 0.3s ease;
+}
+
+.info_A_C_ux p, .info_B_D_ux p {
+    padding: 3%;
+    font-size: 1.5rem;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 1%;
+    border-color: rgb(101, 169, 179);
+    transition: all 0.3s ease;
+}
+
+/* ==== AJUSTANDO IMAGENS ==== */
+.info_A_C_ux img, .info_B_D_ux img {
+    width: 470%;
+    transition: all 0.3s ease;
+}
+
+.info_B_D_ux img{
+    width: 470%;
+    transition: all 0.3s ease;
+}
+
+.idosa-ux {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+}
+
+.operações_ux {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: -10px 10px 9px rgba(0, 0, 0, 0.3);
+    margin: 1%;
+}
+
+.ux_design {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+}
+
+.acessibilidade {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: -10px 10px 9px rgba(0, 0, 0, 0.3);
+    margin: 1%;
+}
+
+/* ==== ANIMANDO BLOCOS DE INFORMAÇÃO E IMAGENS ==== */
+
+.info_A_C_ux p:hover, .info_B_D_ux p:hover {
+    transform: scale(1.02);
+}
+
+.info_A_C_ux img:hover, .info_B_D_ux img:hover {
     transform: scale(1.02);
 }
