@@ -402,6 +402,36 @@ body{
     margin: 1%;
 }
 
+.profissao_front {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+}
+
+.dev_front {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: -10px 10px 9px rgba(0, 0, 0, 0.3);
+    margin: 1%;
+}
+
+.tech_front {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+}
+
+.react_front {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: -10px 10px 9px rgba(0, 0, 0, 0.3);
+    margin: 1%;
+}
+
 /* ==== ANIMANDO BLOCOS DE INFORMAÇÃO E IMAGENS ====*/
 
 .info_A_C_front p:hover, .info_B_D_front p:hover {
@@ -509,6 +539,36 @@ body{
     margin: 1%;
 }
 
+.ux_ferramentas {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+}
+
+.ux_profissões {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: -10px 10px 9px rgba(0, 0, 0, 0.3);
+    margin: 1%;
+}
+
+.ux_tendência_atuais {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+}
+
+.ux_gráfico {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: -10px 10px 9px rgba(0, 0, 0, 0.3);
+    margin: 1%;
+}
+
 /* ==== ANIMANDO BLOCOS DE INFORMAÇÃO E IMAGENS ==== */
 
 .info_A_C_ux p:hover, .info_B_D_ux p:hover {
@@ -516,5 +576,265 @@ body{
 }
 
 .info_A_C_ux img:hover, .info_B_D_ux img:hover {
+    transform: scale(1.02);
+}
+
+/* ==== CONFIGURAÇÃO DA PÁGINA DE CLOUD ==== */
+
+
+/* ===== CONFIGURAÇÕES GERAIS =====*/
+.main-container-cloud {
+    padding: 10px;
+}
+
+.container-titulo-cloud {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    padding: 25px 40px;
+    border: 2px solid black;
+    background-color: rgb(190, 239, 252);
+    border-radius: 10px;
+}
+
+.container-titulo-cloud h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+/* ==== CONFIGURANDO BLOCOS DE TEXTO ==== */
+
+.info_A_C_cloud {
+    display: flex;
+    padding-top: 1%;
+    transition: all 0.3s ease;
+}
+
+.info_B_D_cloud {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+    transition: all 0.3s ease;
+}
+
+.info_A_C_cloud p, .info_B_D_cloud p {
+    padding: 3%;
+    font-size: 1.5rem;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 1%;
+    border-color: rgb(101, 169, 179);
+    transition: all 0.3s ease;
+}
+
+/* ==== AJUSTANDO IMAGENS ==== */
+.info_A_C_cloud img, .info_B_D_cloud img {
+    width: 470%;
+    transition: all 0.3s ease;
+}
+
+.info_B_D_cloud img{
+    width: 470%;
+    transition: all 0.3s ease;
+}
+
+.logo_cloud {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+}
+
+.nuvem_cloud {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: -10px 10px 9px rgba(0, 0, 0, 0.3);
+    margin: 1%;
+}
+
+.ling_cloud {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+}
+
+.tech_cloud {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: -10px 10px 9px rgba(0, 0, 0, 0.3);
+    margin: 1%;
+}
+
+.grafico_cloud {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+}
+
+.areas_cloud {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: -10px 10px 9px rgba(0, 0, 0, 0.3);
+    margin: 1%;
+}
+
+.tendencias_cloud {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+}
+
+.profissoes_cloud {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: -10px 10px 9px rgba(0, 0, 0, 0.3);
+    margin: 1%;
+}
+
+/* ==== ANIMANDO BLOCOS DE INFORMAÇÃO E IMAGENS ==== */
+
+.info_A_C_cloud p:hover, .info_B_D_cloud p:hover {
+    transform: scale(1.02);
+}
+
+.info_A_C_cloud img:hover, .info_B_D_cloud img:hover {
+    transform: scale(1.02);
+}
+
+/* ==== CONFIGURAÇÃO DA PÁGINA DE BACK-END ==== */
+
+
+/* ===== CONFIGURAÇÕES GERAIS =====*/
+.main-container-back {
+    padding: 10px;
+}
+
+.container-titulo-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    padding: 25px 40px;
+    border: 2px solid black;
+    background-color: rgb(190, 239, 252);
+    border-radius: 10px;
+}
+
+.container-titulo-back h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+/* ==== CONFIGURANDO BLOCOS DE TEXTO ==== */
+
+.info_A_C_back {
+    display: flex;
+    padding-top: 1%;
+    transition: all 0.3s ease;
+}
+
+.info_B_D_back {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+    transition: all 0.3s ease;
+}
+
+.info_A_C_back p, .info_B_D_back p {
+    padding: 3%;
+    font-size: 1.5rem;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 1%;
+    border-color: rgb(101, 169, 179);
+    transition: all 0.3s ease;
+}
+
+/* ==== AJUSTANDO IMAGENS ==== */
+.info_A_C_back img, .info_B_D_back img {
+    width: 470%;
+    transition: all 0.3s ease;
+}
+
+.info_B_D_back img{
+    width: 470%;
+    transition: all 0.3s ease;
+}
+
+.ling_back {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+}
+
+.back_node {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: -10px 10px 9px rgba(0, 0, 0, 0.3);
+    margin: 1%;
+}
+
+.Back_eFront {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+}
+
+.back_data {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: -10px 10px 9px rgba(0, 0, 0, 0.3);
+    margin: 1%;
+}
+
+.dev_back {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+}
+
+.perfil_back {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: -10px 10px 9px rgba(0, 0, 0, 0.3);
+    margin: 1%;
+}
+
+.sevvsedg_back {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+}
+
+.PeJ_back {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: -10px 10px 9px rgba(0, 0, 0, 0.3);
+    margin: 1%;
+}
+
+/* ==== ANIMANDO BLOCOS DE INFORMAÇÃO E IMAGENS ==== */
+
+.info_A_C_back p:hover, .info_B_D_back p:hover {
+    transform: scale(1.02);
+}
+
+.info_A_C_back img:hover, .info_B_D_back img:hover {
     transform: scale(1.02);
 }
