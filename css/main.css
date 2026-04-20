@@ -838,3 +838,312 @@ body{
 .info_A_C_back img:hover, .info_B_D_back img:hover {
     transform: scale(1.02);
 }
+
+/* ==== CONFIGURAÇÃO DA PÁGINA DE CIBERSEGURANÇA ==== */
+
+/* ==== CONFIGURAÇÕES GERAIS ====*/
+
+.main-container-sec {
+    padding: 10px;
+}
+
+/* ==== CONFIGURAÇÕES DE TEXTO ====*/
+
+.container-texto-sec {
+    padding: 10px;
+}
+
+.container-titulo-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    padding: 25px 40px;
+    border: 2px solid black;
+    background-color: rgb(190, 239, 252);
+    border-radius: 10px;
+}
+
+.container-titulo-sec h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+/* ==== CONFIGURANDO BLOCOS DE TEXTO ==== */
+
+.container-p-img-sec {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.info_A {
+    padding-top: 1%;
+    transition: all ease 0.3s;
+}
+
+.info_C {
+    display: flex;
+    padding-top: 1%;
+    transition: all ease 0.3s;
+}
+
+.info_A p {
+    padding: 3%;
+    font-size: 1.5rem;
+    /*border-style: solid;
+    border-radius: 10px;
+    margin: 1%;
+    border-color: rgb(101, 169, 179);*/
+    transition: all 0.3s ease;
+}
+
+.info_A  ul {
+    display: flex;
+    list-style: none;
+    margin: 1%;
+    gap: 20px;
+}
+
+.info_A ul li {
+    padding: 3%;
+    font-size: 18px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(101, 169, 179);
+    transition: all 0.3s ease;
+}
+
+.linha {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.texto_coluna {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 1%;
+    border-color: rgb(101, 169, 179);
+    transition: all 0.3s ease;
+}
+
+.info_C p {
+    padding: 3%;
+    font-size: 1.5rem;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 1%;
+    border-color: rgb(101, 169, 179);
+    transition: all 0.3s ease;
+}
+
+.info_B_D_sec {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+    transition: all ease 0.3s;
+}
+.info_B_D_sec p {
+    padding: 3%;
+    font-size: 1.5rem;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 1%;
+    border-color: rgb(101, 169, 179);
+    transition: all 0.3s ease;
+}
+
+.extra {
+    color: black;
+    background-color: rgb(101, 169, 179);
+    border-style: outset;
+    border-color: black;
+    border-radius: 20px;
+    text-align: justify;
+    margin: 1%;
+}
+
+/* ==== AJUSTANDO IMAGENS ==== */
+.info_A img, .info_C img, .info_B_D_sec img{
+    width: 380%;
+    transition: all 0.3s ease;
+}
+
+.img_ciberseg {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+}
+
+.img_tecnos {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: -10px 10px 9px rgba(0, 0, 0, 0.3);
+    margin: 1%;
+}
+
+.img_areas {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+}
+
+.img_profissional {
+    display: flex;
+    border-radius: 5px;
+    width: 50%;
+    box-shadow: -10px 10px 9px rgba(0, 0, 0, 0.3);
+    margin: 1%;
+}
+
+/* ==== ANIMANDO BLOCOS DE INFORMAÇÃO E IMAGENS ====*/
+
+.info_A p:hover, .info_C p:hover, .info_B_D_sec p:hover {
+    transform: scale(1.03);
+}
+
+.info_A img:hover, .info_C img:hover, .info_B_D_sec img:hover {
+    transform: scale(1.03);
+}
+
+.texto_coluna:hover{
+    transform: scale(1.03);
+}
+
+.info_A li:hover{
+    transform: scale(1.03);
+}
+
+/* ==== CONFIGURAÇÃO DA PÁGINA DE MOBILE ==== */
+
+/* ==== CONFIGURAÇÕES GERAIS ====*/
+
+.main-container-mob {
+    padding: 10px;
+}
+
+/* ==== CONFIGURAÇÕES DE TEXTO ====*/
+
+.container-texto-mob {
+    padding: 10px;
+}
+
+.container-titulo-mob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    padding: 25px 40px;
+    border: 2px solid black;
+    background-color: rgb(190, 239, 252);
+    border-radius: 10px;
+}
+
+.container-titulo-front h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+/* ==== CONFIGURANDO BLOCOS DE TEXTO ==== */
+
+.container-p-img-front {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.info_A_mob {
+    display: flex;
+    align-items: center;
+    padding-top: 1%;
+    transition: ease 0.3s;
+}
+
+.info_C_mob {
+    display: flex;
+    padding-top: 1%;
+    transition: ease 0.3s;
+}
+
+.info_B_mob {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+    transition: all ease 0.3s;
+}
+
+.info_D_mob {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+    transition: all ease 0.3s;
+}
+
+.info_A_mob p, .info_C_mob  p, .info_B_mob p, .info_D_mob p {
+    padding: 3%;
+    font-size: 35px;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 1%;
+    border-color: rgb(101, 169, 179);
+    transition: all 0.3s ease;
+}
+
+/* ==== AJUSTANDO IMAGENS ==== */
+.info_A_mob img, .info_C_mob img, .info_B_mob img, .info_D_mob img{
+    width: 380%;
+    transition: all 0.3s ease;
+}
+
+.img_mobiles {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1%;
+    height: 50%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+}
+
+.img_tecnos {
+    display: flex;
+    width: 35%;
+    border-radius: 5px;
+    box-shadow: -10px 10px 9px rgba(0, 0, 0, 0.3);
+    margin: 1%;
+}
+
+.img_atuacoes {
+    display: flex;
+    width: 35%;
+    justify-content: flex-start;
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+}
+
+.img_profissional {
+    display: flex;
+    width: 35%;
+    border-radius: 5px;
+    box-shadow: -10px 10px 9px rgba(0, 0, 0, 0.3);
+    margin: 1%;
+}
+
+/* ==== ANIMANDO BLOCOS DE INFORMAÇÃO E IMAGENS ====*/
+
+.info_A_mob p:hover, .info_C_mob p:hover, .info_B_mob p:hover, .info_D_mob p:hover {
+    transform: scale(1.03);
+}
+
+.info_A_mob img:hover,.info_C_mob img:hover, .info_B_mob img:hover, .info_D_mob img:hover {
+    transform: scale(1.03);
+}
