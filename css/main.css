@@ -1272,9 +1272,9 @@ body{
 /* ==== ANIMANDO BLOCOS DE INFORMAÇÃO E IMAGENS ====*/
 
 .info_A_C_data p:hover, .info_B_D_data p:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
 }
 
 .info_A_C_data img:hover, .info_B_D_data img:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
 }
