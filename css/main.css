@@ -1147,3 +1147,134 @@ body{
 .info_A_mob img:hover,.info_C_mob img:hover, .info_B_mob img:hover, .info_D_mob img:hover {
     transform: scale(1.03);
 }
+
+/* ==== CONFIGURAÇÃO DA PÁGINA DE DATA==== */
+
+/* ==== CONFIGURAÇÕES GERAIS ====*/
+
+.main-container-data {
+    padding: 10px;
+}
+
+/* ==== CONFIGURAÇÕES DE TEXTO ====*/
+
+.container-texto-data {
+    padding: 10px;
+}
+
+.container-titulo-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    padding: 25px 40px;
+    border: 2px solid black;
+    background-color: rgb(190, 239, 252);
+    border-radius: 10px;
+}
+
+.container-titulo-data h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+/* ==== CONFIGURANDO BLOCOS DE TEXTO ==== */
+
+.info_A_C_data {
+    display: flex;
+    padding-top: 1%;
+    transition: all ease 0.3s;
+}
+
+.info_B_D_data {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+    transition: all ease 0.3s;
+}
+
+.info_A_C_data p, .info_B_D_data p {
+    padding: 3%;
+    font-size: 1.5rem;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 1%;
+    border-color: rgb(101, 169, 179);
+    transition: all 0.3s ease;
+}
+
+/* ==== AJUSTANDO IMAGENS ==== */
+.info_A_C_data img, .info_B_D_data img{
+    width: 380%;
+    transition: all 0.3s ease;
+}
+
+.logos_data {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+}
+
+.bibliotecas_data {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: -10px 10px 9px rgba(0, 0, 0, 0.3);
+    margin: 1%;
+}
+
+.conc_data {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+}
+
+.http_data {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: -10px 10px 9px rgba(0, 0, 0, 0.3);
+    margin: 1%;
+}
+
+.profissao_data {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+}
+
+.a_data {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: -10px 10px 9px rgba(0, 0, 0, 0.3);
+    margin: 1%;
+}
+
+.tech_data {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+}
+
+.data_market {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: -10px 10px 9px rgba(0, 0, 0, 0.3);
+    margin: 1%;
+}
+
+/* ==== ANIMANDO BLOCOS DE INFORMAÇÃO E IMAGENS ====*/
+
+.info_A_C_data p:hover, .info_B_D_data p:hover {
+    transform: scale(1.02);
+}
+
+.info_A_C_data img:hover, .info_B_D_data img:hover {
+    transform: scale(1.02);
+}
